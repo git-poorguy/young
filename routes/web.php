@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function () {
+//   return view('index.index');
+//});
+Route::group(['prefix'=>'/','namespace'=>'Index'],function (){
+    Route::get('/','IndexController@index');
 });
