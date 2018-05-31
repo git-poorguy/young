@@ -11,9 +11,18 @@
 |
 */
 
+
 //Route::get('/', function () {
 //   return view('index.index');
 //});
 Route::group(['prefix'=>'/','namespace'=>'Index'],function (){
     Route::get('/','IndexController@index');
 });
+Route::group(['namespace'=>'Index','prefix'=>'index'],function (){
+   Route::group(['prefix'=>'index'],function(){
+       Route::get('index','IndexController@index',function (){
+            return   view('1111');
+       });
+   });
+});
+
