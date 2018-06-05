@@ -18,6 +18,9 @@ body{
     border-bottom: 1px dotted #999;
 
 }
+.y-block{
+    padding: auto 20px;
+}
 .y-search{
     padding: 5% 10%;
 margin-bottom: 5%;
